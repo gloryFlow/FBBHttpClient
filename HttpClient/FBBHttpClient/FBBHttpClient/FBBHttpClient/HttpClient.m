@@ -7,7 +7,7 @@
 //
 
 #import "HttpClient.h"
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 
 #define defaultBaseUrl @"http://192.168.118.74:8888/ndasec/ndc/interfaceservice/ios/api.do"
 static NSString *mobApiBaseUrl = @"http://apicloud.mob.com/";
