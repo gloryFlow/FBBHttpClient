@@ -14,9 +14,9 @@
 		92FC67991F1F4963009861F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FC67971F1F4963009861F1 /* Main.storyboard */; };
 		92FC679B1F1F4963009861F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FC679A1F1F4963009861F1 /* Assets.xcassets */; };
 		92FC679E1F1F4963009861F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FC679C1F1F4963009861F1 /* LaunchScreen.storyboard */; };
-		92FC67AC1F1F4CFF009861F1 /* HttpApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC67A71F1F4CFF009861F1 /* HttpApi.m */; };
-		92FC67AD1F1F4CFF009861F1 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC67A91F1F4CFF009861F1 /* HttpClient.m */; };
-		92FC67AE1F1F4CFF009861F1 /* HttpMobApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC67AB1F1F4CFF009861F1 /* HttpMobApi.m */; };
+		92FC67B61F1F52AD009861F1 /* HttpApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC67B11F1F52AD009861F1 /* HttpApi.m */; };
+		92FC67B71F1F52AD009861F1 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC67B31F1F52AD009861F1 /* HttpClient.m */; };
+		92FC67B81F1F52AD009861F1 /* HttpMobApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC67B51F1F52AD009861F1 /* HttpMobApi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +32,12 @@
 		92FC679A1F1F4963009861F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92FC679D1F1F4963009861F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92FC679F1F1F4963009861F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92FC67A61F1F4CFF009861F1 /* HttpApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpApi.h; sourceTree = "<group>"; };
-		92FC67A71F1F4CFF009861F1 /* HttpApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpApi.m; sourceTree = "<group>"; };
-		92FC67A81F1F4CFF009861F1 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
-		92FC67A91F1F4CFF009861F1 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
-		92FC67AA1F1F4CFF009861F1 /* HttpMobApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpMobApi.h; sourceTree = "<group>"; };
-		92FC67AB1F1F4CFF009861F1 /* HttpMobApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpMobApi.m; sourceTree = "<group>"; };
+		92FC67B01F1F52AD009861F1 /* HttpApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpApi.h; sourceTree = "<group>"; };
+		92FC67B11F1F52AD009861F1 /* HttpApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpApi.m; sourceTree = "<group>"; };
+		92FC67B21F1F52AD009861F1 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		92FC67B31F1F52AD009861F1 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		92FC67B41F1F52AD009861F1 /* HttpMobApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpMobApi.h; sourceTree = "<group>"; };
+		92FC67B51F1F52AD009861F1 /* HttpMobApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpMobApi.m; sourceTree = "<group>"; };
 		CC25886231DB3ADD946BBF0A /* libPods-FBBHttpClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FBBHttpClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,7 +91,7 @@
 		92FC678D1F1F4963009861F1 /* FBBHttpClient */ = {
 			isa = PBXGroup;
 			children = (
-				92FC67A51F1F49EC009861F1 /* FBBHttpClient */,
+				92FC67AF1F1F52AD009861F1 /* HttpClient */,
 				92FC67911F1F4963009861F1 /* AppDelegate.h */,
 				92FC67921F1F4963009861F1 /* AppDelegate.m */,
 				92FC67941F1F4963009861F1 /* ViewController.h */,
@@ -113,17 +113,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		92FC67A51F1F49EC009861F1 /* FBBHttpClient */ = {
+		92FC67AF1F1F52AD009861F1 /* HttpClient */ = {
 			isa = PBXGroup;
 			children = (
-				92FC67A61F1F4CFF009861F1 /* HttpApi.h */,
-				92FC67A71F1F4CFF009861F1 /* HttpApi.m */,
-				92FC67A81F1F4CFF009861F1 /* HttpClient.h */,
-				92FC67A91F1F4CFF009861F1 /* HttpClient.m */,
-				92FC67AA1F1F4CFF009861F1 /* HttpMobApi.h */,
-				92FC67AB1F1F4CFF009861F1 /* HttpMobApi.m */,
+				92FC67B01F1F52AD009861F1 /* HttpApi.h */,
+				92FC67B11F1F52AD009861F1 /* HttpApi.m */,
+				92FC67B21F1F52AD009861F1 /* HttpClient.h */,
+				92FC67B31F1F52AD009861F1 /* HttpClient.m */,
+				92FC67B41F1F52AD009861F1 /* HttpMobApi.h */,
+				92FC67B51F1F52AD009861F1 /* HttpMobApi.m */,
 			);
-			path = FBBHttpClient;
+			path = HttpClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,10 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92FC67961F1F4963009861F1 /* ViewController.m in Sources */,
-				92FC67AE1F1F4CFF009861F1 /* HttpMobApi.m in Sources */,
+				92FC67B81F1F52AD009861F1 /* HttpMobApi.m in Sources */,
 				92FC67931F1F4963009861F1 /* AppDelegate.m in Sources */,
-				92FC67AD1F1F4CFF009861F1 /* HttpClient.m in Sources */,
-				92FC67AC1F1F4CFF009861F1 /* HttpApi.m in Sources */,
+				92FC67B71F1F52AD009861F1 /* HttpClient.m in Sources */,
+				92FC67B61F1F52AD009861F1 /* HttpApi.m in Sources */,
 				92FC67901F1F4963009861F1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
