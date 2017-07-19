@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FBBHttpClient"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "FBBHttpClient网络请求模块"
 
   # This description is used to generate tags and improve search results.
