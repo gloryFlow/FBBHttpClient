@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FBBHttpClient"
-  s.version      = "0.0.9"
+  s.version      = "0.1.0"
   s.summary      = "FBBHttpClient网络请求模块"
 
   # This description is used to generate tags and improve search results.
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "HttpClient/FBBHttpClient/FBBHttpClient/HttpClient/**/*.{h,m}"
+  s.source_files  = "HttpClient/FBBHttpClient/FBBHttpClient/HttpClient/**/*.{h,m,a}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
