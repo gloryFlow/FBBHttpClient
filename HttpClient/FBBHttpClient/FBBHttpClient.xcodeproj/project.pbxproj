@@ -20,9 +20,9 @@
 /* Begin PBXFileReference section */
 		889A8C5B3355A96BA7A989DF /* Pods-FBBHttpClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBBHttpClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBBHttpClient/Pods-FBBHttpClient.debug.xcconfig"; sourceTree = "<group>"; };
 		921ED2671F31AA2F0019D25A /* libHttpClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHttpClient.a; sourceTree = "<group>"; };
-		921ED26B1F31AAA90019D25A /* HttpApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpApi.h; sourceTree = "<group>"; };
-		921ED26C1F31AAA90019D25A /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
-		921ED26D1F31AAA90019D25A /* HttpMobApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpMobApi.h; sourceTree = "<group>"; };
+		92DDE89F1F31BED1002BA884 /* HttpApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpApi.h; sourceTree = "<group>"; };
+		92DDE8A01F31BED1002BA884 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		92DDE8A11F31BED1002BA884 /* HttpMobApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpMobApi.h; sourceTree = "<group>"; };
 		92FC678B1F1F4963009861F1 /* FBBHttpClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBBHttpClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FC678F1F1F4963009861F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92FC67911F1F4963009861F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,24 +56,6 @@
 				E9F94C8730635CDF5923EE90 /* libPods-FBBHttpClient.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		921ED2691F31AAA90019D25A /* include */ = {
-			isa = PBXGroup;
-			children = (
-				921ED26A1F31AAA90019D25A /* HttpClient */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		921ED26A1F31AAA90019D25A /* HttpClient */ = {
-			isa = PBXGroup;
-			children = (
-				921ED26B1F31AAA90019D25A /* HttpApi.h */,
-				921ED26C1F31AAA90019D25A /* HttpClient.h */,
-				921ED26D1F31AAA90019D25A /* HttpMobApi.h */,
-			);
-			path = HttpClient;
 			sourceTree = "<group>";
 		};
 		92FC67821F1F4963009861F1 = {
@@ -122,7 +104,9 @@
 		92FC67AF1F1F52AD009861F1 /* HttpClient */ = {
 			isa = PBXGroup;
 			children = (
-				921ED2691F31AAA90019D25A /* include */,
+				92DDE89F1F31BED1002BA884 /* HttpApi.h */,
+				92DDE8A01F31BED1002BA884 /* HttpClient.h */,
+				92DDE8A11F31BED1002BA884 /* HttpMobApi.h */,
 				921ED2671F31AA2F0019D25A /* libHttpClient.a */,
 			);
 			path = HttpClient;
