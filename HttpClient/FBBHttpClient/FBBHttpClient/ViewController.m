@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HttpMobApi.h"
+#import <FBBAPiClient/HttpMobApi.h>
 
 @interface ViewController ()
 

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04C74B641D691AB98680BA06 /* libPods-FBBHttpClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F94C8730635CDF5923EE90 /* libPods-FBBHttpClient.a */; };
-		921ED2681F31AA2F0019D25A /* libHttpClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 921ED2671F31AA2F0019D25A /* libHttpClient.a */; };
+		92DDE8EC1F31D142002BA884 /* FBBAPiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDE8EB1F31D142002BA884 /* FBBAPiClient.framework */; };
 		92FC67901F1F4963009861F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC678F1F1F4963009861F1 /* main.m */; };
 		92FC67931F1F4963009861F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC67921F1F4963009861F1 /* AppDelegate.m */; };
 		92FC67961F1F4963009861F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC67951F1F4963009861F1 /* ViewController.m */; };
@@ -19,10 +19,7 @@
 
 /* Begin PBXFileReference section */
 		889A8C5B3355A96BA7A989DF /* Pods-FBBHttpClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBBHttpClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBBHttpClient/Pods-FBBHttpClient.debug.xcconfig"; sourceTree = "<group>"; };
-		921ED2671F31AA2F0019D25A /* libHttpClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHttpClient.a; sourceTree = "<group>"; };
-		92DDE89F1F31BED1002BA884 /* HttpApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpApi.h; sourceTree = "<group>"; };
-		92DDE8A01F31BED1002BA884 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
-		92DDE8A11F31BED1002BA884 /* HttpMobApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpMobApi.h; sourceTree = "<group>"; };
+		92DDE8EB1F31D142002BA884 /* FBBAPiClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBBAPiClient.framework; sourceTree = "<group>"; };
 		92FC678B1F1F4963009861F1 /* FBBHttpClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBBHttpClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FC678F1F1F4963009861F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92FC67911F1F4963009861F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,8 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				921ED2681F31AA2F0019D25A /* libHttpClient.a in Frameworks */,
 				04C74B641D691AB98680BA06 /* libPods-FBBHttpClient.a in Frameworks */,
+				92DDE8EC1F31D142002BA884 /* FBBAPiClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,10 +101,7 @@
 		92FC67AF1F1F52AD009861F1 /* HttpClient */ = {
 			isa = PBXGroup;
 			children = (
-				92DDE89F1F31BED1002BA884 /* HttpApi.h */,
-				92DDE8A01F31BED1002BA884 /* HttpClient.h */,
-				92DDE8A11F31BED1002BA884 /* HttpMobApi.h */,
-				921ED2671F31AA2F0019D25A /* libHttpClient.a */,
+				92DDE8EB1F31D142002BA884 /* FBBAPiClient.framework */,
 			);
 			path = HttpClient;
 			sourceTree = "<group>";
@@ -368,6 +362,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 64954NJXT3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FBBHttpClient/HttpClient",
+				);
 				INFOPLIST_FILE = FBBHttpClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -394,6 +392,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 64954NJXT3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FBBHttpClient/HttpClient",
+				);
 				INFOPLIST_FILE = FBBHttpClient/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
