@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FBBHttpClient"
-  s.version      = "0.1.7"
+  s.version      = "0.1.9"
   s.summary      = "FBBHttpClient网络请求模块"
 
   # This description is used to generate tags and improve search results.
@@ -120,7 +120,7 @@ Pod::Spec.new do |s|
 
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
-  s.frameworks = 'UIKit', 'QuartzCore', 'Foundation'    #所需的framework,多个用逗号隔开
+  s.frameworks = 'UIKit', 'QuartzCore', 'Foundation', 'SystemConfiguration', 'CFNetwork','CoreTelephony','CoreLocation','AVFoundation','CoreBluetooth','Security','JavaScriptCore'    #所需的framework,多个用逗号隔开
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
