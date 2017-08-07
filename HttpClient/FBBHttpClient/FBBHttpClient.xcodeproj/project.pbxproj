@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04C74B641D691AB98680BA06 /* libPods-FBBHttpClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F94C8730635CDF5923EE90 /* libPods-FBBHttpClient.a */; };
-		92DDE8EC1F31D142002BA884 /* FBBAPiClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92DDE8EB1F31D142002BA884 /* FBBAPiClient.framework */; };
+		9230F6C41F38044600036A41 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9230F6C31F38044600036A41 /* SystemConfiguration.framework */; };
+		92B800441F356F7A00E48DDE /* SDHttpClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B800431F356F7A00E48DDE /* SDHttpClient.framework */; };
+		92B800471F35716100E48DDE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B800461F35716100E48DDE /* MobileCoreServices.framework */; };
+		92B800491F35716900E48DDE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B800481F35716900E48DDE /* CFNetwork.framework */; };
+		92B8004B1F35717000E48DDE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92B8004A1F35717000E48DDE /* CoreGraphics.framework */; };
 		92FC67901F1F4963009861F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC678F1F1F4963009861F1 /* main.m */; };
 		92FC67931F1F4963009861F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC67921F1F4963009861F1 /* AppDelegate.m */; };
 		92FC67961F1F4963009861F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FC67951F1F4963009861F1 /* ViewController.m */; };
@@ -19,7 +22,11 @@
 
 /* Begin PBXFileReference section */
 		889A8C5B3355A96BA7A989DF /* Pods-FBBHttpClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBBHttpClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBBHttpClient/Pods-FBBHttpClient.debug.xcconfig"; sourceTree = "<group>"; };
-		92DDE8EB1F31D142002BA884 /* FBBAPiClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBBAPiClient.framework; sourceTree = "<group>"; };
+		9230F6C31F38044600036A41 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		92B800431F356F7A00E48DDE /* SDHttpClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDHttpClient.framework; sourceTree = "<group>"; };
+		92B800461F35716100E48DDE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		92B800481F35716900E48DDE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		92B8004A1F35717000E48DDE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		92FC678B1F1F4963009861F1 /* FBBHttpClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBBHttpClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FC678F1F1F4963009861F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92FC67911F1F4963009861F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,8 +46,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04C74B641D691AB98680BA06 /* libPods-FBBHttpClient.a in Frameworks */,
-				92DDE8EC1F31D142002BA884 /* FBBAPiClient.framework in Frameworks */,
+				9230F6C41F38044600036A41 /* SystemConfiguration.framework in Frameworks */,
+				92B8004B1F35717000E48DDE /* CoreGraphics.framework in Frameworks */,
+				92B800491F35716900E48DDE /* CFNetwork.framework in Frameworks */,
+				92B800471F35716100E48DDE /* MobileCoreServices.framework in Frameworks */,
+				92B800441F356F7A00E48DDE /* SDHttpClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +60,10 @@
 		7B2BFE7CCF8F21CF148826AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9230F6C31F38044600036A41 /* SystemConfiguration.framework */,
+				92B8004A1F35717000E48DDE /* CoreGraphics.framework */,
+				92B800481F35716900E48DDE /* CFNetwork.framework */,
+				92B800461F35716100E48DDE /* MobileCoreServices.framework */,
 				E9F94C8730635CDF5923EE90 /* libPods-FBBHttpClient.a */,
 			);
 			name = Frameworks;
@@ -101,7 +115,7 @@
 		92FC67AF1F1F52AD009861F1 /* HttpClient */ = {
 			isa = PBXGroup;
 			children = (
-				92DDE8EB1F31D142002BA884 /* FBBAPiClient.framework */,
+				92B800431F356F7A00E48DDE /* SDHttpClient.framework */,
 			);
 			path = HttpClient;
 			sourceTree = "<group>";
@@ -362,28 +376,38 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 64954NJXT3;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FBBHttpClient/HttpClient",
 				);
 				INFOPLIST_FILE = FBBHttpClient/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Debug-iphoneos/AFNetworking",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Debug-iphoneos",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Debug-iphonesimulator/AFNetworking",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Debug-iphonesimulator",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Release-iphoneos/AFNetworking",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Release-iphoneos",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Release-iphonesimulator/AFNetworking",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Release-iphonesimulator",
 					"$(PROJECT_DIR)/FBBHttpClient/HttpClient",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MGJRouter\"",
+					"-fembed-bitcode",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.FBBHttpClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s armv64";
 			};
 			name = Debug;
 		};
@@ -393,28 +417,38 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 64954NJXT3;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FBBHttpClient/HttpClient",
 				);
 				INFOPLIST_FILE = FBBHttpClient/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Debug-iphoneos/AFNetworking",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Debug-iphoneos",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Debug-iphonesimulator/AFNetworking",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Debug-iphonesimulator",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Release-iphoneos/AFNetworking",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Release-iphoneos",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Release-iphonesimulator/AFNetworking",
-					"$(PROJECT_DIR)/FBBHttpClient/HttpClient/Release-iphonesimulator",
 					"$(PROJECT_DIR)/FBBHttpClient/HttpClient",
 				);
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public/MGJRouter\"",
+					"-fembed-bitcode",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.FBBHttpClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s armv64";
 			};
 			name = Release;
 		};

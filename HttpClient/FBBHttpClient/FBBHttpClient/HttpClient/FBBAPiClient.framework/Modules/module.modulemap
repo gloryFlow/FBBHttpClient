@@ -1,6 +1,0 @@
-framework module FBBAPiClient {
-  umbrella header "FBBAPiClient.h"
-
-  export *
-  module * { export * }
-}
