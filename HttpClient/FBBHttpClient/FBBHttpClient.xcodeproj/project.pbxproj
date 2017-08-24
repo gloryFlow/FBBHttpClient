@@ -23,6 +23,8 @@
 /* Begin PBXFileReference section */
 		889A8C5B3355A96BA7A989DF /* Pods-FBBHttpClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBBHttpClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBBHttpClient/Pods-FBBHttpClient.debug.xcconfig"; sourceTree = "<group>"; };
 		9230F6C31F38044600036A41 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9230F6DA1F39512600036A41 /* libPods-FBBHttpClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-FBBHttpClient.a"; path = "Pods/../build/Debug-iphoneos/libPods-FBBHttpClient.a"; sourceTree = "<group>"; };
+		9230F6DC1F39668600036A41 /* libPods-FBBHttpClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-FBBHttpClient.a"; path = "Pods/../build/Debug-iphoneos/libPods-FBBHttpClient.a"; sourceTree = "<group>"; };
 		92B800431F356F7A00E48DDE /* SDHttpClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDHttpClient.framework; sourceTree = "<group>"; };
 		92B800461F35716100E48DDE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		92B800481F35716900E48DDE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -60,6 +62,8 @@
 		7B2BFE7CCF8F21CF148826AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9230F6DC1F39668600036A41 /* libPods-FBBHttpClient.a */,
+				9230F6DA1F39512600036A41 /* libPods-FBBHttpClient.a */,
 				9230F6C31F38044600036A41 /* SystemConfiguration.framework */,
 				92B8004A1F35717000E48DDE /* CoreGraphics.framework */,
 				92B800481F35716900E48DDE /* CFNetwork.framework */,
@@ -387,6 +391,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FBBHttpClient/HttpClient",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
@@ -428,6 +433,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FBBHttpClient/HttpClient",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (

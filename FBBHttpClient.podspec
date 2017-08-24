@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FBBHttpClient"
-  s.version      = "0.2.1"
+  s.version      = "0.2.3"
   s.summary      = "FBBHttpClient网络请求模块"
 
   # This description is used to generate tags and improve search results.
@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
   s.author             = { "bw.guo" => "bw.guo@dface.cn" }
   # Or just: s.author    = "bw.guo"
   # s.authors            = { "bw.guo" => "bw.guo@dface.cn" }
-  # s.social_media_url   = "http://twitter.com/bw.guo"
+  s.social_media_url   = "http://twitter.com/bw.guo"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "HttpClient/FBBHttpClient/FBBHttpClient/HttpClient/**/*"
+  # s.source_files  = "HttpClient/FBBHttpClient/FBBHttpClient/HttpClient/**/*"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -121,6 +121,7 @@ Pod::Spec.new do |s|
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
   s.frameworks = 'UIKit', 'QuartzCore', 'Foundation', 'SystemConfiguration', 'CFNetwork','CoreTelephony','CoreLocation','AVFoundation','CoreBluetooth','Security','JavaScriptCore'    #所需的framework,多个用逗号隔开
+  s.vendored_frameworks = 'HttpClient/FBBHttpClient/FBBHttpClient/HttpClient/SDHttpClient.framework'
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -132,9 +133,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "AFNetworking"
+  s.dependency "AFNetworking"
 
 end
